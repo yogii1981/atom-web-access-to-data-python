@@ -7,11 +7,21 @@ for line in hand:
 
 
 
-import re 
+import re
 
 hand = open('mbox-short.txt')
 print(hand)
 for line in hand:
     line = line.rstrip()
     if re.search('From:', line):
+     print(line)
+
+
+import re 
+
+hand = open('mbox-short.txt')
+print(hand)
+for line in hand:
+    line = line.rstrip()
+    if re.search('^From:', line):
      print(line)
